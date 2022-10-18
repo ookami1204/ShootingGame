@@ -10,7 +10,7 @@ public class Attack : MonoBehaviour
     [SerializeField]
     protected string target;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag(target))
         {

@@ -46,8 +46,9 @@ public class MoveLazer : Attack
     }
 
 
-    void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
+        base.OnTriggerEnter2D(collision);
         if (collision.CompareTag("wall"))
         {
             speedX *= -1;
@@ -56,10 +57,6 @@ public class MoveLazer : Attack
         if (collision.CompareTag("floor"))
         {
             speedY *= -1;
-        }
-        if (collision.CompareTag(target))
-        {
-            collision.GetComponent<HP>().Damage(attack);
         }
     }
 

@@ -1281,12 +1281,12 @@ PrefabInstance:
     - target: {fileID: -8705193804410718260, guid: 0177b18107a708e4da41a505878b3405,
         type: 3}
       propertyPath: MinRotate
-      value: 25
+      value: -30
       objectReference: {fileID: 0}
     - target: {fileID: -8705193804410718260, guid: 0177b18107a708e4da41a505878b3405,
         type: 3}
       propertyPath: rotateSpeed
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2366282226357714086, guid: 0177b18107a708e4da41a505878b3405,
         type: 3}

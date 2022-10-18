@@ -570,7 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadScene:
-    sceneAsset: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+    sceneAsset: {fileID: 102900000, guid: 36c01ec2795510b4e80540caeb4b3368, type: 3}
     required: 0
     buildIndex: 1
   audioSource: {fileID: 1346891390}

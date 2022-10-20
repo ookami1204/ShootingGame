@@ -3,26 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerHP : HP
+public class PlayerHP : MonoBehaviour
 {
     [SerializeField]
-    Slider slider;
+    Image[] HP = new Image[5];
     [SerializeField]
     PlayerStatus status;
     [SerializeField]
     Image gameOverImage;
+    [SerializeField]
+    int effectNum;
+    [SerializeField]
+    float effectInterval;
+    [SerializeField]
+    GameObject effect;
+    [SerializeField]
+    BoxCollider2D boxcollider;
 
-    protected override void Start()
+    int MaxHP = 5;
+    int currentHP = 5;
+
+    void Start()
     {
-        base.Start();
-        MaxHP = status.MaxHP;
-        SliderUpDate();
+
     }
 
-    public override void Damage(int attack)
+    public void Damage()
     {
-        currentHP -= attack;
-        SliderUpDate();
+        currentHP--;
+        HP[currentHP].gameObject.SetActive(false);
         if (currentHP <= 0)
         {
             PlayerDie();
@@ -33,27 +42,38 @@ public class PlayerHP : HP
     void PlayerDie()
     {
         gameOverImage.gameObject.SetActive(true);
-        StopAllCoroutines();
     }
 
     public void Recovery(int amount)
     {
         currentHP += amount;
-        SliderUpDate();
-    }
-
-    public void SliderUpDate()
-    {
-        slider.value = (float)currentHP / MaxHP;
+        currentHP = Mathf.Clamp(currentHP, 0, MaxHP);
+        for(int i = 0; i < currentHP; i++)
+        {
+            HP[i].gameObject.SetActive(true);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("wall"))
         {
-            currentHP -= currentHP;
-            slider.value = 0;
+            currentHP--;
+            HP[currentHP].gameObject.SetActive(false);
             StartCoroutine(DieProcess());
+        }
+    }
+
+    IEnumerator DieProcess()
+    {
+        var effectArea = (Vector2)transform.position + boxcollider.offset;
+        Vector2 insPos;
+        for(int i = 0; i < effectNum; i++)
+        {
+            yield return new WaitForSeconds(effectInterval);
+            insPos.x = Random.Range(effectArea.x - 0.5f, effectArea.x + 0.5f);
+            insPos.y = Random.Range(effectArea.y - 0.5f, effectArea.y + 0.5f);
+            Instantiate(effect, insPos, Quaternion.identity);
         }
     }
 }

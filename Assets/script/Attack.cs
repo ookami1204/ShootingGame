@@ -7,12 +7,13 @@ public class Attack : MonoBehaviour
     [SerializeField]
     protected int attack;
 
-    [SerializeField]
-    protected string target;
-
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(target))
+        if (collision.CompareTag("Player"))
+        {
+            collision.gameObject.GetComponent<PlayerHP>().Damage();
+        }
+        if (collision.CompareTag("Enemy"))
         {
             collision.gameObject.GetComponent<HP>().Damage(attack);
         }

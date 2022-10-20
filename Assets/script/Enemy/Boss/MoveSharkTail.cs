@@ -22,8 +22,14 @@ public class MoveSharkTail : MonoBehaviour
     {
         nowSpeed = rotateSpeed;
         rotate = transform.localEulerAngles;
-        //rotate.z = -(1 / (MaxRotate + MinRotate)) * rotateSpeed;
-        MoveCoroutine = StartCoroutine(nameof(Move));
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("MovePos"))
+        {
+            StartCoroutine(nameof(Move));
+        }
     }
 
     IEnumerator Move()
@@ -35,13 +41,11 @@ public class MoveSharkTail : MonoBehaviour
             transform.eulerAngles += nowSpeed * Time.deltaTime * Vector3.forward;
             if ((ChangeAngle() > MaxRotate && IsUp == true))
             {
-                Debug.Log("A");
                 nowSpeed = -rotateSpeed;
                 IsUp = false;
             }
             if(ChangeAngle() < MinRotate && IsUp == false)
             {
-                Debug.Log("B");
                 nowSpeed = rotateSpeed;
                 IsUp = true;
             }

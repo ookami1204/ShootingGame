@@ -34,7 +34,9 @@ public class ShotLazer : MonoBehaviour
         foreach(RaycastHit2D hit in Physics2D.RaycastAll(transform.position, targetPos, 20))
         {
             if(hit.collider != null && hit.collider.CompareTag("Player"))
-                hit.collider.gameObject.GetComponent<PlayerHP>().Damage(attack);
+            {
+                hit.collider.gameObject.GetComponent<PlayerHP>().Damage();
+            }
             Destroy(insObj);
         }
     }

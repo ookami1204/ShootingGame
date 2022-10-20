@@ -32,9 +32,8 @@ public class MoveTracking : Attack
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
         base.OnTriggerEnter2D(collision);
-        if (collision.CompareTag(target))
+        if (collision.CompareTag("player"))
         {
-
             Destroy(gameObject);
         }
         if (collision.CompareTag("MovePos"))

@@ -35,13 +35,8 @@ public class Item : ItemStatus
     {
         switch (itemKinds)
         {
-            case ItemKinds.MaxHP:
-                Player.GetComponent<PlayerHP>().UPMaxHP(2);
-                Player.GetComponent<PlayerHP>().SliderUpDate();
-                Player.GetComponent<PlayerHP>().Recovery(2);
-                break;
             case ItemKinds.CurrentHP:
-                Player.GetComponent<PlayerHP>().Recovery(5);
+                Player.GetComponent<PlayerHP>().Recovery(1);
                 break;
             case ItemKinds.Bullet:
                 PlayerStatus.GetComponent<PlayerStatus>().StatusUP(itemKinds);

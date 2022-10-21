@@ -39,6 +39,10 @@ public class PlayerShot : MonoBehaviour
 
     void Update()
     {
+        if(Time.timeScale == 0)
+        {
+            return;
+        }
         if (Input.GetButtonDown("ShotButton"))
         {
             time = 0;

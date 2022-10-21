@@ -7,7 +7,7 @@ public class Pause : MonoBehaviour
     [SerializeField]
     GameObject pauseText;
 
-    bool IsPause;
+    bool IsPause = false;
 
     void Start()
     {
@@ -16,10 +16,10 @@ public class Pause : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetButtonDown("Pause"))
         {
-            IsPause = !IsPause;
             Time.timeScale = IsPause == false ? 0 : 1;
+            IsPause = !IsPause;
             //pauseText.SetActive(IsPause);
         }
     }

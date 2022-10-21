@@ -41,6 +41,7 @@ public class PlayerHP : MonoBehaviour
 
     void PlayerDie()
     {
+        Time.timeScale = 0;
         gameOverImage.gameObject.SetActive(true);
     }
 
@@ -53,14 +54,11 @@ public class PlayerHP : MonoBehaviour
             HP[i].gameObject.SetActive(true);
         }
     }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("wall"))
+    private void OnCollisionEnter2D(Collision2D collision)
+    {        
+        if (collision.gameObject.CompareTag("wall"))
         {
-            currentHP--;
-            HP[currentHP].gameObject.SetActive(false);
-            StartCoroutine(DieProcess());
+            Damage();
         }
     }
 

@@ -10,7 +10,10 @@ public class EffectDestroy : MonoBehaviour
     AudioSource audioSource;
     void Start()
     {
-        audioSource.PlayOneShot(SE);
+        if(SE != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(SE);
+        }
     }
 
     public void EndAnim()

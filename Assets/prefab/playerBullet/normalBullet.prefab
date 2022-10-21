@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack: 2
-  target: Enemy
+  player: 1
 --- !u!114 &-1183382955431190772
 MonoBehaviour:
   m_ObjectHideFlags: 0

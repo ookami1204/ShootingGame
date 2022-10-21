@@ -17,6 +17,7 @@ TagManager:
   - wall
   - floor
   - EventSystem
+  - Force
   layers:
   - Default
   - TransparentFX
@@ -33,7 +34,7 @@ TagManager:
   - Item
   - sensor
   - Boss
-  - 
+  - Force
   - 
   - 
   - 

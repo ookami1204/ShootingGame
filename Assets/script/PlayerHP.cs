@@ -19,6 +19,8 @@ public class PlayerHP : MonoBehaviour
     GameObject effect;
     [SerializeField]
     BoxCollider2D boxcollider;
+    [SerializeField]
+    GameObject destroyPos;
 
     int MaxHP = 5;
     int currentHP = 5;
@@ -59,6 +61,14 @@ public class PlayerHP : MonoBehaviour
         if (collision.gameObject.CompareTag("wall"))
         {
             Damage();
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject == destroyPos)
+        {
+            PlayerDie();
+            StartCoroutine(DieProcess());
         }
     }
 

@@ -28,7 +28,7 @@ public class MoveSharkTail : MonoBehaviour
     {
         if (collision.CompareTag("MovePos"))
         {
-            StartCoroutine(nameof(Move));
+            MoveCoroutine = StartCoroutine(Move());
         }
     }
 

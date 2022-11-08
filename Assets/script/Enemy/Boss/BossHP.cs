@@ -15,6 +15,8 @@ public class BossHP : MonoBehaviour
     [SerializeField]
     MoveShark move;
     [SerializeField]
+    EnemyShot shot;
+    [SerializeField]
     StageCrear stageCrear;
     int destroyCoreNum;
 
@@ -23,6 +25,7 @@ public class BossHP : MonoBehaviour
         destroyCoreNum++;
         if(destroyCoreNum == CoreNum)
         {
+            shot.enabled = false;
             move.enabled = false;
             StartCoroutine(Die());
             StartCoroutine(TaileDie());
@@ -50,7 +53,6 @@ public class BossHP : MonoBehaviour
             yield return new WaitForSeconds(effectTime);
             Instantiate(effect, RandomInsPos(), Quaternion.identity);
         }
-        yield return new WaitForSeconds(3f);
         stageCrear.Crear();
     }
 

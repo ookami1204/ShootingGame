@@ -137,6 +137,7 @@
     <Compile Include="Assets\script\PlayerStatus.cs" />
     <Compile Include="Assets\script\ScrollEnemy.cs" />
     <Compile Include="Assets\script\StageCrear.cs" />
+    <Compile Include="Assets\script\Steam\SteamManager.cs" />
     <Compile Include="Assets\script\SubForceShot.cs" />
     <Compile Include="Assets\script\Test1.cs" />
     <Compile Include="Assets\script\Test2.cs" />

@@ -16,6 +16,8 @@ public class BossHP : MonoBehaviour
     MoveShark move;
     [SerializeField]
     StageCrear stageCrear;
+    [SerializeField]
+    EnemyShot enemyShot;
     int destroyCoreNum;
 
     public void Damage(int damage)
@@ -24,6 +26,7 @@ public class BossHP : MonoBehaviour
         if(destroyCoreNum == CoreNum)
         {
             move.enabled = false;
+            enemyShot.Stop();
             StartCoroutine(Die());
             StartCoroutine(TaileDie());
         }
@@ -45,12 +48,13 @@ public class BossHP : MonoBehaviour
     }
     IEnumerator Die()
     {
+        enemyShot.DestroyBullet();
         for (int i = 0; i < effectNum; i++)
         {
             yield return new WaitForSeconds(effectTime);
             Instantiate(effect, RandomInsPos(), Quaternion.identity);
         }
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         stageCrear.Crear();
     }
 

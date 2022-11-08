@@ -22,6 +22,15 @@ public class PlayerHP : MonoBehaviour
     [SerializeField]
     GameObject destroyPos;
 
+    [SerializeField]
+    AudioClip damageSE;
+    [SerializeField]
+    AudioSource audioSource;
+    [SerializeField]
+    AudioClip dieBGM;
+    [SerializeField]
+    AudioSource BGMSouse;
+
     int MaxHP = 5;
     int currentHP = 5;
 
@@ -32,11 +41,14 @@ public class PlayerHP : MonoBehaviour
 
     public void Damage()
     {
+        audioSource.PlayOneShot(damageSE);
         currentHP--;
         HP[currentHP].gameObject.SetActive(false);
         if (currentHP <= 0)
         {
             PlayerDie();
+            BGMSouse.Stop();
+            BGMSouse.PlayOneShot(dieBGM);
             StartCoroutine(DieProcess());
         }
     }

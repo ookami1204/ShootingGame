@@ -4,27 +4,49 @@ using UnityEngine;
 
 public class EnemyShot : MonoBehaviour
 {
-    public float repeatTime, shotNum, shotDir;
-    public GameObject bullet, muzlle;
+    [SerializeField]
+    public float repeatTime, shotDir;
+    [SerializeField]
+    int shotNum;
+    [SerializeField]
+    GameObject bullet, muzlle;
+
+    GameObject[] insBullets;
+
+    Coroutine shot;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("MovePos"))
         {
-            StartCoroutine(Shot());
+            shot = StartCoroutine(Shot());
         }
     }
 
     IEnumerator Shot()
     {
+        insBullets = new GameObject[shotNum];
         while (true)
         {
             yield return new WaitForSeconds(repeatTime);
             for (int i = 0; i < shotNum; i++)
             {
-                Instantiate(bullet, muzlle.transform.position, Quaternion.identity);
+                insBullets[i] = Instantiate(bullet, muzlle.transform.position, Quaternion.identity);
                 yield return new WaitForSeconds(shotDir);
             }
+        }
+    }
+
+    public void Stop()
+    {
+        StopCoroutine(shot);
+    }
+
+    public void DestroyBullet()
+    {
+        foreach(var obj in insBullets)
+        {
+            Destroy(obj);
         }
     }
 }

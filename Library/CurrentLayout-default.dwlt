@@ -44,8 +44,13 @@ MonoBehaviour:
     height: 997
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
   m_RootView: {fileID: 14}
   m_MinSize: {x: 875, y: 300}
+=======
+  m_RootView: {fileID: 11}
+  m_MinSize: {x: 875, y: 492}
+>>>>>>> ookami
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &3
@@ -148,8 +153,13 @@ MonoBehaviour:
   m_MinSize: {x: 432, y: 271}
   m_MaxSize: {x: 14002, y: 10021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 118
 --- !u!114 &7
+=======
+  controlID: 135
+--- !u!114 &4
+>>>>>>> ookami
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,7 +180,11 @@ MonoBehaviour:
     height: 483
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+<<<<<<< HEAD
   m_ActualView: {fileID: 24}
+=======
+  m_ActualView: {fileID: 20}
+>>>>>>> ookami
   m_Panes:
   - {fileID: 24}
   m_Selected: 0
@@ -199,8 +213,13 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 421}
   m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
+<<<<<<< HEAD
   controlID: 229
 --- !u!114 &9
+=======
+  controlID: 36
+--- !u!114 &6
+>>>>>>> ookami
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,9 +238,15 @@ MonoBehaviour:
     y: 0
     width: 775
     height: 464
+<<<<<<< HEAD
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 23}
+=======
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 19}
+>>>>>>> ookami
   m_Panes:
   - {fileID: 23}
   - {fileID: 19}
@@ -249,11 +274,19 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 909, y: 421}
   m_MaxSize: {x: 22004, y: 14021}
   vertical: 0
   controlID: 228
 --- !u!114 &11
+=======
+  m_MinSize: {x: 908, y: 442}
+  m_MaxSize: {x: 22003, y: 14021}
+  vertical: 0
+  controlID: 220
+--- !u!114 &8
+>>>>>>> ookami
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -272,9 +305,15 @@ MonoBehaviour:
     y: 0
     width: 518
     height: 947
+<<<<<<< HEAD
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 21}
+=======
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
+>>>>>>> ookami
   m_Panes:
   - {fileID: 21}
   m_Selected: 0
@@ -300,7 +339,11 @@ MonoBehaviour:
     height: 583
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
+<<<<<<< HEAD
   m_ActualView: {fileID: 22}
+=======
+  m_ActualView: {fileID: 18}
+>>>>>>> ookami
   m_Panes:
   - {fileID: 22}
   m_Selected: 0
@@ -326,7 +369,11 @@ MonoBehaviour:
     height: 364
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
+<<<<<<< HEAD
   m_ActualView: {fileID: 25}
+=======
+  m_ActualView: {fileID: 21}
+>>>>>>> ookami
   m_Panes:
   - {fileID: 25}
   m_Selected: 0
@@ -422,6 +469,7 @@ MonoBehaviour:
   m_MinSize: {x: 432, y: 371}
   m_MaxSize: {x: 14002, y: 14021}
   vertical: 1
+<<<<<<< HEAD
   controlID: 168
 --- !u!114 &18
 MonoBehaviour:
@@ -454,6 +502,10 @@ MonoBehaviour:
   m_Scope: 1
   m_SplitterFlex: 0.2
 --- !u!114 &19
+=======
+  controlID: 183
+--- !u!114 &15
+>>>>>>> ookami
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -573,20 +625,34 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/script/Enemy
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
   - Assets/script/Enemy
+=======
+    - Assets/SE,BGM
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/SE,BGM
+>>>>>>> ookami
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\coroc\Documents\GitHub\ShootingGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: a8520000
     m_LastClickedID: 21160
     m_ExpandedIDs: 0000000052420000544200005642000098420000a852000000ca9a3b
+=======
+    m_SelectedIDs: 44420000
+    m_LastClickedID: 16964
+    m_ExpandedIDs: 00000000fc4100000042000042420000e2550000ec550000ee55000000ca9a3b
+>>>>>>> ookami
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -614,7 +680,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000524200005442000056420000
+=======
+    m_ExpandedIDs: 00000000fc410000fe41000000420000
+>>>>>>> ookami
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -666,7 +736,11 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 0}
+=======
+    m_ScrollPosition: {x: 0, y: 1645}
+>>>>>>> ookami
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 158
@@ -702,7 +776,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewResizer:
-    m_CachedPref: 231
+    m_CachedPref: -231
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
@@ -737,9 +811,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 022affff162affff1a2bffff1e2bffffd4dcffffe8dcffffecdcfffff0dcffff06e7ffff42e7ffff56e7ffff0ef1ffff16f1ffff7ef1ffff62fbffffb26f0000
+=======
+      m_SelectedIDs: 0c680000
+      m_LastClickedID: 26636
+      m_ExpandedIDs: fcc2ffffb8c4ffff3ccdffffa2cfffff0cd8ffff86e0ffff3eebffff62fbffffea3a0000563b0000b83b00006e3c0000e059000034640000
+>>>>>>> ookami
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -799,9 +879,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 4.998465, y: 0.2957315, z: -25.173288}
     speed: 2
     m_Value: {x: 4.998465, y: 0.2957315, z: -25.173288}
+=======
+    m_Target: {x: -2.386074, y: 0.4276749, z: -49.056038}
+    speed: 2
+    m_Value: {x: -2.386074, y: 0.4276749, z: -49.056038}
+>>>>>>> ookami
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -851,9 +937,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 8.692765
     speed: 2
     m_Value: 8.692765
+=======
+    m_Target: 6.5037403
+    speed: 2
+    m_Value: 6.5037403
+>>>>>>> ookami
   m_Ortho:
     m_Target: 1
     speed: 2

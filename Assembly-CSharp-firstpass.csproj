@@ -701,16 +701,7 @@
       <HintPath>C:/Users/coroc/Documents/GitHub/ShootingGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="com.rlabrecque.steamworks.net.editor.csproj">
-      <Project>{C1ACBD2D-1462-2D23-544D-D64E61784083}</Project>
-      <Name>com.rlabrecque.steamworks.net.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.rlabrecque.steamworks.net.csproj">
-      <Project>{D5A4DB47-5A42-54D9-47C4-4E7FC9BA8536}</Project>
-      <Name>com.rlabrecque.steamworks.net</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

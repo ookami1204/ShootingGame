@@ -747,14 +747,6 @@
       <Project>{4C29D328-2221-BEEB-FDBB-E772EA262183}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="com.rlabrecque.steamworks.net.editor.csproj">
-      <Project>{C1ACBD2D-1462-2D23-544D-D64E61784083}</Project>
-      <Name>com.rlabrecque.steamworks.net.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.rlabrecque.steamworks.net.csproj">
-      <Project>{D5A4DB47-5A42-54D9-47C4-4E7FC9BA8536}</Project>
-      <Name>com.rlabrecque.steamworks.net</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

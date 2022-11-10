@@ -69,7 +69,6 @@
     <Compile Include="Assets\48 Particle Effect Pack\Script\CsParticleEffectPackLightControl.cs" />
     <Compile Include="Assets\48 Particle Effect Pack\Script\CsParticleMove.cs" />
     <Compile Include="Assets\48 Particle Effect Pack\Script\CsShowAllEffect.cs" />
-    <Compile Include="Assets\Scripts\Steamworks.NET\SteamManager.cs" />
     <Compile Include="Assets\Unity-Scene-Field-master\Assets\Test\ScenesHolder.cs" />
     <Compile Include="Assets\Unity-Scene-Field-master\Assets\Test\Test.cs" />
     <Compile Include="Assets\Unity-Scene-Field-master\Assets\Trisibo\Scene field\SceneField.cs" />
@@ -121,6 +120,7 @@
     <Compile Include="Assets\script\Enemy\ShotLazer.cs" />
     <Compile Include="Assets\script\Enemy\ShotSnake.cs" />
     <Compile Include="Assets\script\Enemy\SnakeBodyHP.cs" />
+    <Compile Include="Assets\script\GameExit.cs" />
     <Compile Include="Assets\script\GetItem.cs" />
     <Compile Include="Assets\script\HP.cs" />
     <Compile Include="Assets\script\Item.cs" />
@@ -775,14 +775,6 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{14E62AB1-89FC-D4C5-D7F0-6045686AFEC5}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.rlabrecque.steamworks.net.editor.csproj">
-      <Project>{C1ACBD2D-1462-2D23-544D-D64E61784083}</Project>
-      <Name>com.rlabrecque.steamworks.net.editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="com.rlabrecque.steamworks.net.csproj">
-      <Project>{D5A4DB47-5A42-54D9-47C4-4E7FC9BA8536}</Project>
-      <Name>com.rlabrecque.steamworks.net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

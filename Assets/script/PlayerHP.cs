@@ -31,16 +31,39 @@ public class PlayerHP : MonoBehaviour
     [SerializeField]
     AudioSource BGMSouse;
 
+    [SerializeField]
+    SpriteRenderer spriteRenderer;
+
     int MaxHP = 5;
     int currentHP = 5;
+    bool IsFlashing = false;
 
     void Start()
     {
 
     }
 
+    IEnumerator Flashing()
+    {
+        IsFlashing = true;
+        Color defoltColor = spriteRenderer.color;
+        for(int i = 0; i < 6; i++)
+        {
+            spriteRenderer.color = Color.clear;
+            yield return new WaitForSeconds(0.1f);
+            spriteRenderer.color = defoltColor;
+            yield return new WaitForSeconds(0.1f);
+        }
+        IsFlashing = false;
+    }
+
     public void Damage()
     {
+        if (IsFlashing == true)
+        {
+            return;
+        }
+        StartCoroutine(Flashing());
         audioSource.PlayOneShot(damageSE);
         currentHP--;
         HP[currentHP].gameObject.SetActive(false);

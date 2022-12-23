@@ -2030,9 +2030,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadScene:
-    sceneAsset: {fileID: 0}
+    sceneAsset: {fileID: 102900000, guid: 443dd60dfefe85a4c8d97858ee8f2d01, type: 3}
     required: 0
-    buildIndex: -1
+    buildIndex: 2
   image: {fileID: 139877614}
 --- !u!82 &307548751
 AudioSource:

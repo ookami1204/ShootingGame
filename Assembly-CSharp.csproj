@@ -69,11 +69,10 @@
     <Compile Include="Assets\48 Particle Effect Pack\Script\CsParticleEffectPackLightControl.cs" />
     <Compile Include="Assets\48 Particle Effect Pack\Script\CsParticleMove.cs" />
     <Compile Include="Assets\48 Particle Effect Pack\Script\CsShowAllEffect.cs" />
-    <Compile Include="Assets\Unity-Scene-Field-master\Assets\Test\ScenesHolder.cs" />
-    <Compile Include="Assets\Unity-Scene-Field-master\Assets\Test\Test.cs" />
     <Compile Include="Assets\Unity-Scene-Field-master\Assets\Trisibo\Scene field\SceneField.cs" />
     <Compile Include="Assets\script\Attack.cs" />
     <Compile Include="Assets\script\BulletDestroy.cs" />
+    <Compile Include="Assets\script\CrearTest.cs" />
     <Compile Include="Assets\script\DestroyToHit.cs" />
     <Compile Include="Assets\script\Enemy\Barrier.cs" />
     <Compile Include="Assets\script\Enemy\Boss\BossCore.cs" />

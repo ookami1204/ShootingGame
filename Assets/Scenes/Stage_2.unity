@@ -373,7 +373,7 @@ GameObject:
   - component: {fileID: 174275524}
   m_Layer: 0
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9119,10 +9119,8 @@ MonoBehaviour:
   player: {fileID: 700574646}
   scrollSpeed: 1
   stopPos:
-  - 5
-  - 100
+  - 32
   stopTime:
-  - 3
   - 0
 --- !u!81 &327531405
 AudioListener:
@@ -10052,7 +10050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   status: {fileID: 1875276057}
-  slider_Charge: {fileID: 0}
+  slider_Charge: {fileID: 147118719}
   chargeEffect: {fileID: 8819648541679490960, guid: 479505361ccc9de49ae28ea81e94262b,
     type: 3}
   bullet:
@@ -10088,18 +10086,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HP:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 7986312}
+  - {fileID: 1682739367}
+  - {fileID: 1495622213}
+  - {fileID: 1129825841}
+  - {fileID: 2134761581}
   status: {fileID: 1875276057}
-  gameOverImage: {fileID: 0}
-  effectNum: 0
+  gameOverImage: {fileID: 1967884290}
+  effectNum: 1
   effectInterval: 0
-  effect: {fileID: 0}
+  effect: {fileID: 4618439904522232584, guid: 314ea9f467630df4e81cd830251eead6, type: 3}
   boxcollider: {fileID: 700574652}
   destroyPos: {fileID: 0}
+  damageSE: {fileID: 8300000, guid: d60d8d4fcfe02ff4597b8269db8d18ad, type: 3}
+  audioSource: {fileID: 700574647}
+  dieBGM: {fileID: 8300000, guid: 18a9d22ed42197340a15089d75b1a749, type: 3}
+  BGMSouse: {fileID: 501821811}
+  spriteRenderer: {fileID: 700574654}
 --- !u!114 &700574651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11992,7 +11995,7 @@ MonoBehaviour:
     sceneAsset: {fileID: 102900000, guid: bb4b545fe56c429419ac60eb6b752120, type: 3}
     required: 0
     buildIndex: 0
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 501821811}
   cliclSE: {fileID: 8300000, guid: 5d0715f45534c4c4ab4cebe43172cb81, type: 3}
 --- !u!114 &1384620493
 MonoBehaviour:
@@ -12630,7 +12633,7 @@ GameObject:
   - component: {fileID: 1677164716}
   m_Layer: 0
   m_Name: Grid
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13924,3 +13927,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134761579}
   m_CullTransparentMesh: 0
+--- !u!1 &2140952895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8039770238075372914, guid: b7e6e905bf5e2ea4cbd9a9a8de0c7714,
+    type: 3}
+  m_PrefabInstance: {fileID: 660260859}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2140952896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140952895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93fe7a58e4f8e734689df6f1bdcdb407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1782259875}

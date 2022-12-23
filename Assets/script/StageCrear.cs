@@ -9,6 +9,7 @@ public class StageCrear : MonoBehaviour
 {
     [SerializeField]
     SceneField loadScene;
+
     [SerializeField]
     Image image;
 

@@ -54,7 +54,7 @@ public class BossHP : MonoBehaviour
             yield return new WaitForSeconds(effectTime);
             Instantiate(effect, RandomInsPos(), Quaternion.identity);
         }
-        yield return new WaitForSeconds(1f);
+        Debug.Log("クリア");
         stageCrear.Crear();
     }
 
